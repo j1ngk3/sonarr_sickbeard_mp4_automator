@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+
+  sonarr_mp4_automator:
+    image: jingke/sonarr_sickbeard_mp4_automator:${TAG_VERSION:-latest}
+    build:
+      context: .
