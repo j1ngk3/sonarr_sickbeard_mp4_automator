@@ -1,4 +1,4 @@
-# Version 1.1
+# Version 1.2
 FROM linuxserver/sonarr
 
 RUN \ 
