@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         && apt-get clean \
         && rm -rf /var/lib/apt/lists/*       
 
-RUN git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator/ && \  
+RUN git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator/ && \  
     touch /sickbeard_mp4_automator/info.log && \ 
     chmod a+rwx -R /sickbeard_mp4_automator
 
