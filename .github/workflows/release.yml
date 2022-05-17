@@ -24,7 +24,7 @@ jobs:
 
       - name: Log in to Docker Hub
         run: >-
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p '${{ secrets.DOCKER_PASSWORD }}'
 
       - name: Build docker image
         run: ./build.sh
